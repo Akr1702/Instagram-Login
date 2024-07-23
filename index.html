@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;    
+        }
+        .left{
+            width:350px;
+            height:650px;
+            margin-right:100px;
+        }
+        .right{
+            width:350px;
+            height:600px;
+            margin:0px 20px;
+            text-align: center;
+            padding:5px;
+        }
+        h1{
+            font-family:lobster two;
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: black;
+        }
+        input{
+            width:90%;
+            margin:5px;
+            height:35px;
+            border-radius: 3px;
+            border:1px solid grey;
+            padding-left:5px;
+            font-size: 12px;
+        }
+        button{
+            margin: 20px;
+            width:90%;
+            background-color:rgb(76,181,249);
+            border-radius: 10px ;
+            border:2px;
+            height:40px;
+           font-size: 15px; 
+           color: white;
+           font-weight: bold;
+        }
+        .upper{
+            height:65%;
+            box-shadow: 0px 0px 2px grey;
+            padding: 20px;
+            margin-bottom:10px;
+        }
+        .lower{
+            height:10%;
+            box-shadow: 0px 0px 2px grey;
+            padding:20px;
+            font-weight: lighter;
+            font-size: smaller;
+            
+        }
+        #or { 
+            display: flex; 
+            flex-direction: row; 
+            color:grey;
+            font-size: 11px;
+           padding-bottom: 0%;
+        } 
+          
+        #or:before, 
+        #or:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 1px solid grey; 
+            margin: auto; 
+            
+        } 
+        .lower2{
+            padding: 10px;
+            line-height: 40px;
+            font-weight:lighter;
+            font-size: smaller;
+            
+        }
+        .image{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            
+        }
+        .i1{
+            width:150px;
+             margin-right:10px; 
+        }
+        .i2{
+            width: 130px;
+             
+            border-radius: 5px;
+        }
+        .mainimg{
+            width:500px;
+            height:700px ;
+            
+        }
+        .nav{
+            text-align: center;
+            width:70%;
+            margin: auto;
+            
+        }
+        .ni{
+            text-decoration: none;
+            color: grey;
+            margin:0px 5px;
+            font-size: 13px;
+            font-weight: lpx;
+        }
+        .ni:hover{
+            text-decoration: underline;
+        }
+        .footer{
+            text-align: center;
+            color:grey;
+            padding:10px;
+            font-size: 13px;
+        }
+        select{
+            border: 0px;
+            color: grey;
+            font-size: 13px;
+        }
+
+        @media (max-width: 840px){
+            .left{
+                display: none;
+            }
+            .right{
+                width: 50%;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="mainimg">
+             <img id="main" src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
+             
+</div>
+      
+        </div>
+        <div class="right" >
+            <div class="upper">
+            <h1>Instagram</h1>
+            <form action="">
+                <div class="credentials">
+                    <input type="text" placeholder="Phone number,username,or email">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Password">
+                </div>
+                <button>
+                    Log in
+                </button>
+            </form>
+            <div class="fb">
+                <h4 id="or"><span>OR</span></h4><br>
+                <a href="https://www.facebook.com/" style="text-decoration: none;"><h4 style="color:rgb(56,81,133);margin-bottom: 5px;margin-top:0px;font-size: smaller;"><i class="fa-brands fa-square-facebook"></i> Log in with Facebook</h4></a>
+            <br>
+            <h5 style="color:grey;font-weight: lighter;">Forgot Password?</h5>
+        </div>
+            </div>
+            <div class="lower">
+                
+                Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/" style="text-decoration: none;"> <b style="color:rgb(76,181,249)">Sign up</b></a>
+                
+            </div>
+            <div class="lower2">
+                Get the app.
+                <br>
+                <div class="image">
+                 <a href="https://play.google.com/store/games?hl=en" ><img class="i1" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt=""></a>
+                <a href="https://play.google.com/store/games?hl=en" ><img class="i2" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt=""></a>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div class="nav">
+        <a href="#document" class="ni">Meta</a>
+        <a href="#document"  class="ni">About</a>
+        <a href="#document"  class="ni">Blog</a>
+        <a href="#document"  class="ni">Jobs</a>
+        <a href="#document"  class="ni">Help</a>
+        <a href="#document"  class="ni">API</a>
+        <a href="#document"  class="ni">Privacy</a>
+        <a href="#document"  class="ni">Terms</a>
+        <a href="#document"  class="ni">Locations</a>
+        <a href="#document" class="ni">Instagram Lite</a>
+        <a href="#document"  class="ni">Threads</a>
+       
+            <a href="#document"  class="ni">Contact Uploading & Non-Users</a> 
+            <a href="#document"  class="ni">Meta Verified</a> 
+        </a>
+    </div>
+    <div class="footer">
+        <select name="" id="" style="margin-right: 10px;">
+            <option value="">English</option>
+            <option value="">Hindi</option>
+            <option value="">Arabic</option>
+            <option value="">Urdu</option>
+            <option value="">Marathi</option>
+            <option value="">German</option>
+            <option value="">Mandarin</option>
+        </select>
+        <i class="fa-regular fa-copyright"></i> 2024 Instagram from Meta
+    </div>
+</body>
+</html>
